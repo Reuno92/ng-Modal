@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div class="jumbotron mt-5 text-center">
+        <h1>Welcome !
+            <small class="text-warning">Come and play</small>
+        </h1>
+        <p class="text-info">What do you choose today ?</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3 offset-3">
+                        <app-modal (passData)="getData($event)"></app-modal>
+                    </div>
+                    <div class="col-3">
+                        <a href="http://fr.lmgtfy.com/?q=Gulli" type="button" class="btn btn-lg btn-outline-link text-danger">I don't care !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5" *ngIf="spacing && number">
+            <p>The spacing is {{ spacing }}. The number is {{ number }}.</p>
+        </div>
+    </div>
+</div>
+
+
